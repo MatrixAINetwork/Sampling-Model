@@ -1,0 +1,1718 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 45080
+
+Current time: 	4/27/17 3:50:19 PM CST
+Time zone: 	China Standard Time (Asia/Chungking)
+
+OS: CentOS release 6.8 (Final)
+Version: 2.6.32-642.el6.x86_64
+Architecture: amd64
+Available processors (cores): 32
+
+DISPLAY: localhost:27.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/eda/tools/xilinx/vivado/2016.2/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	wangyf
+User home directory: /home/wangyf
+User working directory: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /eda/tools/xilinx/vivado
+RDI Data directory: /eda/tools/xilinx/vivado/2016.2/Vivado/2016.2/data
+RDI Bin directory: /eda/tools/xilinx/vivado/2016.2/Vivado/2016.2/bin
+
+Vivado preferences path: /home/wangyf/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /home/wangyf/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	152 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 5,021 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create New Project"); // l:JideButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 46 MB (+45442kb) [00:00:05]
+// [Engine Memory]: 5,002 MB (+5093628kb) [00:00:05]
+// [GUI Memory]: 52 MB (+3993kb) [00:00:05]
+// [GUI Memory]: 61 MB (+6755kb) [00:00:06]
+// [GUI Memory]: 65 MB (+1428kb) [00:00:06]
+// h:g (cv:JFrame): New Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,021 MB. GUI used memory: 28 MB. Current time: 4/27/17 3:50:20 PM CST
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "trng"); // ao:JTextField (JPanel:JComponent, h:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, h:g)
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v");
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a:JButton (F:JPanel, h:g)
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc");
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+selectButton(PAResourceOtoP.PartChooser_BOARDS, "Boards"); // m:s (JPanel:JComponent, h:g): TRUE
+selectComboBox(PAResourceOtoP.PartChooser_BOARD_VENDOR_CHOOSER, "xilinx.com", 2); // I:N (JPanel:JComponent, h:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,076 MB. GUI used memory: 28 MB. Current time: 4/27/17 3:50:55 PM CST
+selectComboBox(PAResourceOtoP.PartChooser_BOARD_DISPLAY_NAME_CHOOSER, "Virtex-7 VC709 Evaluation Platform", 5); // r:N (JPanel:JComponent, h:g)
+selectTable(PAResourceOtoP.PartChooser_BOARDS, "Virtex-7 VC709 Evaluation Platform ; xilinx.com ; 1.0 ; xc7vx690tffg1761-2 ; 1761 ; 1.8 ; 1470 ; 3600 ; 866400 ; 0 ; 36 ; 850 ; 433200 ; 20 ; 3 ; 85 ; 0 ; 85 ; C ; 1.03 ; 0.97 ; 0.97 ; 0 ; 0 ; 0 ; 36 ; 0", 0, "Virtex-7 VC709 Evaluation Platform", 0); // P:v (JViewport:JComponent, h:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// bL:g (h:g):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project trng /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng -part xc7vx690tffg1761-2 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/tools/xilinx/vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part xilinx.com:vc709:part0:1.8 [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// 'g' command handler elapsed time: 45 seconds
+dismissDialog("Create Project"); // bL:g (h:g)
+dismissDialog("New Project"); // h:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+// [GUI Memory]: 74 MB (+5600kb) [00:00:54]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BIT_CONVERT (fpga_filelist.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), u_trng_drive - trng_drive (fpga_filelist.v)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("fpga_filelist.v", 279, 159); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v), u_trng0 - trng (fpga_filelist.v)]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BIT_CONVERT (fpga_filelist.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, output_convert (fpga_filelist.v)]", 6, false, false, true, false, false, false); // z:k (G:JPanel, cv:JFrame) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, output_convert (fpga_filelist.v)]", 6, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+dismissFileChooser();
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v");
+selectTableHeader(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "Library", 3); // bI:v (JViewport:JComponent, b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BIT_CONVERT (fpga_filelist.v)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BIT_CONVERT (fpga_filelist.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BIT_CONVERT (fpga_filelist.v)]", 3, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v), dut - trng_top (fpga_filelist.v)]", 4, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top trng_top [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,115 MB. GUI used memory: 38 MB. Current time: 4/27/17 3:53:10 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// Tcl Message: [Thu Apr 27 15:53:14 2017] Launched synth_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// [GUI Memory]: 78 MB (+114kb) [00:03:31]
+// Elapsed time: 118 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 211, 76); // F:bH (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,216 MB. GUI used memory: 41 MB. Current time: 4/27/17 3:55:55 PM CST
+// Elapsed time: 43 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bL:g (cv:JFrame):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7vx690tffg1761-2 
+// [Engine Memory]: 5,285 MB (+34420kb) [00:05:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,397 MB. GUI used memory: 40 MB. Current time: 4/27/17 3:56:10 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,529 MB. GUI used memory: 40 MB. Current time: 4/27/17 3:56:15 PM CST
+// [Engine Memory]: 5,575 MB (+26737kb) [00:06:02]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /eda/tools/xilinx/vivado/2016.2/Vivado/2016.2/data/parts/xilinx/virtex7/devint/virtex7/xc7vx690t/xc7vx690t.xgd; ZipEntry: xc7vx690t_detail.xgd elapsed time: 0.6s
+// [Engine Memory]: 5,892 MB (+40699kb) [00:06:03]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 91 MB (+9446kb) [00:06:06]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 676 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.2 INFO: [Device 21-403] Loading part xc7vx690tffg1761-2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// [GUI Memory]: 99 MB (+3793kb) [00:06:08]
+// 'dG' command handler elapsed time: 22 seconds
+// N:a (cv:JFrame): Critical Messages: addNotify
+// Elapsed time: 23 seconds
+dismissDialog("Open Synthesized Design"); // bL:g (cv:JFrame)
+// Elapsed time: 22 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+dismissDialog("Critical Messages"); // N:a (cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 13 seconds
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Elapsed time: 19 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_edif -force /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf", true); // ap:ao (R:ak, cv:JFrame)
+// Tcl Command: 'write_edif -force /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf'
+// Tcl Command: 'write_edif -force /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf'
+// Tcl Message: write_edif -force /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf 
+// Tcl Message: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf 
+// Elapsed time: 33 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 377, 106); // dI:N (JPanel:JComponent, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// [GUI Memory]: 105 MB (+1492kb) [00:07:50]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, output_convert (fpga_filelist.v)]", 6, false, true, false, false, false, false); // z:k (G:JPanel, cv:JFrame) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (fpga_filelist.v)]", 2, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aB:g (cv:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aB:g)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // aB:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// y:y (cv:JFrame): Invalid Top Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:y)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: update_compile_order -fileset sources_1 
+dismissDialog("Invalid Top Module"); // y:y (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// [GUI Memory]: 118 MB (+8036kb) [00:08:27]
+// Elapsed time: 58 seconds
+String[] filenames31467 = {"/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_drive.v", "/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_top.v"};
+setFileChooser(filenames31467);
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// Elapsed time: 82 seconds
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 163 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.v /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_drive.v /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_top.v} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), dut - trng_top (trng_top.edf)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), dut - trng_top (trng_top.v)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), dut - trng_top (trng_top.edf)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("trng_drive.v", 358, 169); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), dut - trng_top (trng_top.edf)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 7, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 544, 226); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 501, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 494, 209); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 648, 315); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("trng_fpga_top.v", 304, 220); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 140, 270); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 151, 262); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bL:g (cv:JFrame):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bL:g (cv:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 5); // O:as (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+setText("PAResourceItoN.IPCoreView_IP_CATALOG_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, cv:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 13, "Clocking Wizard", 0, false); // O:as (JViewport:JComponent, cv:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 13); // O:as (JViewport:JComponent, cv:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 13, "Clocking Wizard", 0, false, false, false, false, false, true); // O:as (JViewport:JComponent, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// l:bL (cv:JFrame):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// p:g (cv:JFrame): Customize IP: addNotify
+// [GUI Memory]: 126 MB (+2147kb) [00:11:52]
+dismissDialog("Customize IP"); // l:bL (cv:JFrame)
+// Elapsed time: 19 seconds
+setText("Component Name", "xilinx_pll"); // O:ao (cb:N, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cR:g (F:JPanel, p:g)
+// Elapsed time: 13 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // cR:g (F:JPanel, p:g)
+// Elapsed time: 28 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cR:g (F:JPanel, p:g)
+// Elapsed time: 16 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "25"); // O:ao (cS:N)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 4); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 5); // cR:g (F:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Customize IP"); // p:g (cv:JFrame)
+// TclEventType: CREATE_IP_CORE
+// bL:g (cv:JFrame):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name xilinx_pll 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} CONFIG.PRIM_IN_FREQ {200.000} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKIN1_JITTER_PS {50.0} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {9.125} CONFIG.MMCM_CLKIN1_PERIOD {5.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {36.500} CONFIG.CLKOUT1_JITTER {178.502} CONFIG.CLKOUT1_PHASE_ERROR {104.359}] [get_ips xilinx_pll] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xilinx_pll'... 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xilinx_pll'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xilinx_pll'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'xilinx_pll'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xilinx_pll'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] -no_script -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_run -jobs 16 xilinx_pll_synth_1 
+// Tcl Message: [Thu Apr 27 16:03:50 2017] Launched xilinx_pll_synth_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/xilinx_pll_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] -directory /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.ip_user_files/sim_scripts -ip_user_files_dir /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.ip_user_files -ipstatic_source_dir /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_pll (xilinx_pll.xci)]", 5); // z:k (G:JPanel, cv:JFrame)
+// G:be (cv:JFrame): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // G:be (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 6, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 6, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("xilinx_pll.v", 284, 200); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 113, 310); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 62, 167, false, false, false, true, false); // F:bH (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeView_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("trng_fpga_top.v", 200, 199); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 199, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 195, 256); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "trng_fpga_top.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 47, 280); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 81, 279); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectCodeEditor("trng_fpga_top.v", 111, 324); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 564, 322); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 330, 201); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 330, 200); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 340, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 335, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 328, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 355, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// bL:g (cv:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// [GUI Memory]: 136 MB (+3465kb) [00:14:34]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,935 MB. GUI used memory: 93 MB. Current time: 4/27/17 4:04:48 PM CST
+// Engine heap size: 5,936 MB. GUI used memory: 94 MB. Current time: 4/27/17 4:04:48 PM CST
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,940 MB. GUI used memory: 57 MB. Current time: 4/27/17 4:04:52 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 676 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 7390.438 ; gain = 213.902 ; free physical = 24746 ; free virtual = 481477 
+// N:a (cv:JFrame): Critical Messages: addNotify
+dismissDialog("Reloading"); // bL:g (cv:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+dismissDialog("Critical Messages"); // N:a (cv:JFrame)
+// Elapsed time: 55 seconds
+selectCodeEditor("trng_fpga_top.v", 174, 157); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 186, 215); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 190, 250); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 200, 305); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 200, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 143 MB (+622kb) [00:30:19]
+// Elapsed time: 881 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 217, 137); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 223, 199); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 240, 242); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 242, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 374, 158); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bL:g (cv:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bL:g (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,105 MB. GUI used memory: 103 MB. Current time: 4/27/17 4:21:25 PM CST
+// Elapsed time: 34 seconds
+setFileChooser("/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 38 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, trng_fpga_define.v]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // r:a (cb:z, cv:JFrame)
+// T:x (cv:JFrame): Set Type: addNotify
+selectComboBox(PAResourceQtoS.SrcFileTypeComboBox_SOURCE_FILE_TYPE, "SystemVerilog", 2); // cc:f (JPanel:JComponent, T:x)
+selectComboBox(PAResourceQtoS.SrcFileTypeComboBox_SOURCE_FILE_TYPE, "Verilog Header", 1); // cc:f (JPanel:JComponent, T:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, T:x)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property file_type {Verilog Header} [get_files  /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v] 
+dismissDialog("Set Type"); // T:x (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, trng_fpga_define.v]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_GLOBAL_INCLUDE, "Global include", true); // h:JCheckBox (JPanel:JComponent, cv:JFrame): TRUE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include true [get_files  /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 4); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2); // z:k (G:JPanel, cv:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// bL:g (cv:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 6,100 MB. GUI used memory: 98 MB. Current time: 4/27/17 4:22:32 PM CST
+// Engine heap size: 6,100 MB. GUI used memory: 100 MB. Current time: 4/27/17 4:22:32 PM CST
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 6,100 MB. GUI used memory: 67 MB. Current time: 4/27/17 4:22:36 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 6,247 MB (+62654kb) [00:32:24]
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 7534.148 ; gain = 143.711 ; free physical = 28103 ; free virtual = 484880 
+// N:a (cv:JFrame): Critical Messages: addNotify
+dismissDialog("Reloading"); // bL:g (cv:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+dismissDialog("Critical Messages"); // N:a (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 10, false); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), dut - trng_top (trng_top.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 241, 301); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), dut - trng_top (trng_top.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 335, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 393, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 397, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 106 seconds
+selectCodeEditor("trng_fpga_top.v", 229, 219); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,227 MB. GUI used memory: 102 MB. Current time: 4/27/17 4:25:21 PM CST
+// Engine heap size: 6,245 MB. GUI used memory: 102 MB. Current time: 4/27/17 4:25:21 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bL:g (cv:JFrame):  Closing : addNotify
+dismissDialog("Closing"); // bL:g (cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 290, 160); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectCodeEditor("trng_fpga_top.v", 339, 339); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 381, 407); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 385, 455); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 381, 497); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 365, 515); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 281, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 218, 164); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 207, 152); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 222, 204); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("trng_fpga_top.v", 235, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 240, 383); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 221, 191); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 229, 199); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 247, 307); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 250, 377); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 296, 179); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 296, 178); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 36, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:be)
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 374, 294); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("trng.xdc", 332, 161); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 438, 218); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 461, 266); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 478, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 470, 192); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 309, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 429, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 266, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 266, 122, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 268, 392); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 152 MB (+1639kb) [00:35:51]
+selectCodeEditor("trng.xdc", 308, 125); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 160, 125); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("trng.xdc", 174, 135); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 145, 125); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 238, 123); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 279, 135); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 329, 123); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 334, 124); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("trng.xdc", 236, 123); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 167, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 167, 127, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 244, 130); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 399, 123); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 345, 130); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 345, 130, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey(null, null, 'z');
+selectCodeEditor("trng.xdc", 444, 117); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 455, 140); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 455, 147); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 353, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 260, 189); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 260, 189, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 295, 191); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 303, 186); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 286, 198); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 286, 198, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 261, 216); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 261, 216, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 392, 250); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 422, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 427, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 433, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 230, 169); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 258, 182); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 262, 178); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 187, 160); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 36, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Thu Apr 27 16:27:31 2017] Launched synth_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/runme.log [Thu Apr 27 16:27:31 2017] Launched impl_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 370 seconds
+selectCodeEditor("trng.xdc", 371, 128); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "1 critical warning"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Constraints 18-1056] Clock 'clk' completely overrides clock 'clk_p_i'.. New: create_clock -period 5.000 -name clk [get_ports clk_p_i], [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc: and 9]. Previous: create_clock -period 5.000 [get_ports clk_p_i], [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/.Xil/Vivado-62674-wds040/dcp/xilinx_pll_in_context.xdc: and 1]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/.Xil/Vivado-62674-wds040/dcp/xilinx_pll_in_context.xdc;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// ab:y (cv:JFrame): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a:JButton (JPanel:JComponent, ab:y)
+dismissDialog("Unable to Open File"); // ab:y (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Constraints 18-1056] Clock 'clk' completely overrides clock 'clk_p_i'.. New: create_clock -period 5.000 -name clk [get_ports clk_p_i], [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc: and 9]. Previous: create_clock -period 5.000 [get_ports clk_p_i], [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/.Xil/Vivado-62674-wds040/dcp/xilinx_pll_in_context.xdc: and 1]. ]", 2, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc;-;;-;16;-;line;-;9;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 355, 200); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 477, 85); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 451, 132); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 435, 192); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cv:JFrame)
+// be:g (cv:JFrame): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a:JButton (JPanel:JComponent, be:g)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // be:g (cv:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -noclean_dir  
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Set Up Debug]", 21, false); // x:Y (w:G, cv:JFrame)
+// bL:g (cv:JFrame):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7vx690tffg1761-2 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 6,276 MB. GUI used memory: 70 MB. Current time: 4/27/17 4:34:35 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: MARK_DEBUG_NET
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 6,768 MB (+219034kb) [00:44:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,768 MB. GUI used memory: 67 MB. Current time: 4/27/17 4:34:38 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.dcp' for cell 'u_xilinx_pll' INFO: [Netlist 29-17] Analyzing 627 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll_board.xdc] for cell 'u_xilinx_pll/inst' Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll_board.xdc] for cell 'u_xilinx_pll/inst' Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc] for cell 'u_xilinx_pll/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 7770.289 ; gain = 236.141 ; free physical = 27678 ; free virtual = 484476 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc] for cell 'u_xilinx_pll/inst' Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.dcp' INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 8249.457 ; gain = 715.309 ; free physical = 27444 ; free virtual = 484227 
+// Run Command: PAResourceCommand.PACommandNames_DEBUG_WIZARD
+// N:a (cv:JFrame): Critical Messages: addNotify
+// Q:g (cv:JFrame): Set Up Debug: addNotify
+// Elapsed time: 17 seconds
+dismissDialog("Open Synthesized Design"); // bL:g (cv:JFrame)
+// bL:g (Q:g):  Filtering Net and Tracing Clock Domain : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+dismissDialog("Filtering Net and Tracing Clock Domain"); // bL:g (Q:g)
+selectTreeTableHeader(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "Driver Cell", 2); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "rdata (32) ; dut/CLK_I_IBUF_BUFG ; FDCE ; Data and Trigger", 1, "rdata (32)", 0, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "wdata (32) ; partially defined ; (Multiple) ; Data and Trigger", 2, "wdata (32)", 0, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "resetn ; u_xilinx_pll/inst/clk_out1 ; LUT1 ; Data and Trigger", 3, "resetn", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "scan_mode ; undefined ; GND ; Data and Trigger", 4, "scan_mode", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "sel ; u_xilinx_pll/inst/clk_out1 ; FDCE ; Data and Trigger", 5, "sel", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "scan_mode ; undefined ; GND ; Data and Trigger", 4, "scan_mode", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "wdata (32) ; partially defined ; (Multiple) ; Data and Trigger", 2, "wdata (32)", 0, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "rdata (32) ; dut/CLK_I_IBUF_BUFG ; FDCE ; Data and Trigger", 1, "rdata (32)", 0, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "addr (32) ; partially defined ; (Multiple) ; Data and Trigger", 0, "addr (32)", 0, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "wdata (32) ; partially defined ; (Multiple) ; Data and Trigger", 2, "wdata (32)", 0, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "resetn ; u_xilinx_pll/inst/clk_out1 ; LUT1 ; Data and Trigger", 3, "resetn", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "write ; u_xilinx_pll/inst/clk_out1 ; FDCE ; Data and Trigger", 6, "write", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "sel ; u_xilinx_pll/inst/clk_out1 ; FDCE ; Data and Trigger", 5, "sel", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "scan_mode ; undefined ; GND ; Data and Trigger", 4, "scan_mode", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "resetn ; u_xilinx_pll/inst/clk_out1 ; LUT1 ; Data and Trigger", 3, "resetn", 0, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "scan_mode ; undefined ; GND ; Data and Trigger", 4, "undefined", 1, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTableHeader(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "Clock Domain", 1, false, true, false, false, false); // at:as (JViewport:JComponent, Q:g) - Control Key
+selectTreeTableHeader(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "Clock Domain", 1, false, true, false, false, false); // at:as (JViewport:JComponent, Q:g) - Control Key
+typeControlKey(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, (String) null, 'a'); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "resetn ; u_xilinx_pll/inst/clk_out1 ; LUT1 ; Data and Trigger", 1, "u_xilinx_pll/inst/clk_out1", 1, true, false, false, false, true, false); // at:as (JViewport:JComponent, Q:g) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.DebugWizard_SELECT_CLOCK_DOMAIN, "Select Clock Domain..."); // W:af (am:JPopupMenu, Q:g)
+// Tcl Command: 'show_objects -name CLK_NET0.3792539472959283 [get_nets -hierarchical -filter {TYPE == "GLOBAL_CLOCK"}]'
+// bb:x (cv:JFrame): Select Clock Domain: addNotify
+// TclEventType: SHOW_OBJECTS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, bb:x)
+dismissDialog("Select Clock Domain"); // bb:x (cv:JFrame)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "addr (32) ; u_xilinx_pll/inst/clk_out1 ; (Multiple) ; Data and Trigger", 4, "u_xilinx_pll/inst/clk_out1", 1, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "resetn ; u_xilinx_pll/inst/clk_out1 ; LUT1 ; Data and Trigger", 1, "u_xilinx_pll/inst/clk_out1", 1, true); // at:as (JViewport:JComponent, Q:g) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "addr (32) ; u_xilinx_pll/inst/clk_out1 ; (Multiple) ; Data and Trigger", 4, "u_xilinx_pll/inst/clk_out1", 1, false); // at:as (JViewport:JComponent, Q:g)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "rdata (32) ; u_xilinx_pll/inst/clk_out1 ; FDCE ; Data and Trigger", 6, "u_xilinx_pll/inst/clk_out1", 1, false); // at:as (JViewport:JComponent, Q:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+selectComboBox(PAResourceAtoD.DebugWizard_SAMPLE_OF_DATA_DEPTH, "2048", 1); // f:JComboBox (JPanel:JComponent, Q:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, Q:g)
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_CORE_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_core u_ila_0 ila 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// bL:g (Q:g):  Set Up Debug : addNotify
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_TRIGIN_EN false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/clk] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/clk [get_nets [list u_xilinx_pll/inst/clk_out1 ]] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe0] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: connect_debug_port u_ila_0/probe0 [get_nets [list {rdata[0]} {rdata[1]} {rdata[2]} {rdata[3]} {rdata[4]} {rdata[5]} {rdata[6]} {rdata[7]} {rdata[8]} {rdata[9]} {rdata[10]} {rdata[11]} {rdata[12]} {rdata[13]} {rdata[14]} {rdata[15]} {rdata[16]} {rdata[17]} {rdata[18]} {rdata[19]} {rdata[20]} {rdata[21]} {rdata[22]} {rdata[23]} {rdata[24]} {rdata[25]} {rdata[26]} {rdata[27]} {rdata[28]} {rdata[29]} {rdata[30]} {rdata[31]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe1] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: connect_debug_port u_ila_0/probe1 [get_nets [list {addr[0]} {addr[1]} {addr[2]} {addr[3]} {addr[4]} {addr[5]} {addr[6]} {addr[7]} {addr[8]} {addr[9]} {addr[10]} {addr[11]} {addr[12]} {addr[13]} {addr[14]} {addr[15]} {addr[16]} {addr[17]} {addr[18]} {addr[19]} {addr[20]} {addr[21]} {addr[22]} {addr[23]} {addr[24]} {addr[25]} {addr[26]} {addr[27]} {addr[28]} {addr[29]} {addr[30]} {addr[31]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe2] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: connect_debug_port u_ila_0/probe2 [get_nets [list {wdata[0]} {wdata[1]} {wdata[2]} {wdata[3]} {wdata[4]} {wdata[5]} {wdata[6]} {wdata[7]} {wdata[8]} {wdata[9]} {wdata[10]} {wdata[11]} {wdata[12]} {wdata[13]} {wdata[14]} {wdata[15]} {wdata[16]} {wdata[17]} {wdata[18]} {wdata[19]} {wdata[20]} {wdata[21]} {wdata[22]} {wdata[23]} {wdata[24]} {wdata[25]} {wdata[26]} {wdata[27]} {wdata[28]} {wdata[29]} {wdata[30]} {wdata[31]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe3] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe3 [get_nets [list resetn ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe4] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: connect_debug_port u_ila_0/probe4 [get_nets [list scan_mode ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe5] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe5 [get_nets [list sel ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe6] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,948 MB. GUI used memory: 106 MB. Current time: 4/27/17 4:35:52 PM CST
+// Tcl Message: connect_debug_port u_ila_0/probe6 [get_nets [list write ]] 
+dismissDialog("Set Up Debug"); // bL:g (Q:g)
+dismissDialog("Set Up Debug"); // Q:g (cv:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+dismissDialog("Critical Messages"); // N:a (cv:JFrame)
+collapseTreeTable(PAResourceAtoD.DebugView_DEBUG_CORES_TREE_TABLE, "u_ila_0 (labtools_ila_v6) ;  ;  ; ", 1); // y:as (JViewport:JComponent, cv:JFrame)
+expandTreeTable(PAResourceAtoD.DebugView_DEBUG_CORES_TREE_TABLE, "u_ila_0 (labtools_ila_v6) ;  ;  ; ", 1); // y:as (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aV:y (cv:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aV:y)
+// G:be (cv:JFrame): Out of Date Design: addNotify
+dismissDialog("Save Project"); // aV:y (cv:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Save Constraints : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Out of Date Design"); // G:be (cv:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints -force 
+// Tcl Message: INFO: [Project 1-96] Target constrs file set to '/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc' for the 'constrs_1' constraints set. 
+// G:be (cv:JFrame): No Implementation Results Available: addNotify
+dismissDialog("Save Constraints"); // bL:g (cv:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// 'ck' command handler elapsed time: 6 seconds
+dismissDialog("No Implementation Results Available"); // G:be (cv:JFrame)
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.08 . Memory (MB): peak = 8249.457 ; gain = 0.000 ; free physical = 27431 ; free virtual = 484218 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Apr 27 16:36:17 2017] Launched impl_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 246, 96); // F:bH (JPanel:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // af:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "295 warnings"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-507] No nets matched 'locked'. [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc:20]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc;-;;-;16;-;line;-;20;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-180] No cells matched '*/*/*/RO_DLY*/*'. [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc:42]. ]", 5, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc;-;;-;16;-;line;-;42;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Project 1-486] Could not resolve non-primitive black box cell 'trng_top' instantiated as 'dut' [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_top.v:48]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_top.v;-;;-;16;-;line;-;48;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 219, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. dut/ADDR_I_IBUF[0]_inst . Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.. ]", 8, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3332] Sequential element (ADDR_O_reg[31]) is unused and will be removed from module trng_drive.. ]", 7, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. dut/ADDR_I_IBUF[0]_inst . Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.. ]", 8, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3332] Sequential element (ADDR_O_reg[31]) is unused and will be removed from module trng_drive.. ]", 7, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. dut/ADDR_I_IBUF[0]_inst . Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.. ]", 8, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3332] Sequential element (ADDR_O_reg[31]) is unused and will be removed from module trng_drive.. ]", 7); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-3332] Sequential element (ADDR_O_reg[31]) is unused and will be removed from module trng_drive.. , [Synth 8-3332] Sequential element (ADDR_O_reg[28]) is unused and will be removed from module trng_drive.. ]", 10, false); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1]", 1); // al:k (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1]", 2); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1, open_run synth_1 -name synth_1. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1, open_run synth_1 -name synth_1. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1, open_run synth_1 -name synth_1. ]", 3); // al:k (JViewport:JComponent, cv:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1, open_run synth_1 -name synth_1. ]", 3); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("trng_fpga_top.v", 251, 328); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_1]", 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1]", 1); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 399, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_top.v", 361, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "295 warnings"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "1 critical warning"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTab((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 14); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 14); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v), inst - xilinx_pll_clk_wiz (xilinx_pll_clk_wiz.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v), inst - xilinx_pll_clk_wiz (xilinx_pll_clk_wiz.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v), inst - xilinx_pll_clk_wiz (xilinx_pll_clk_wiz.v)]", 6, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("xilinx_pll_clk_wiz.v", 272, 266); // F:bH (JPanel:JComponent, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("xilinx_pll_clk_wiz.v", 393, 233); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll_clk_wiz.v", 359, 252); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll_clk_wiz.v", 373, 245); // F:bH (JPanel:JComponent, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 208, 117); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 306, 110); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 279, 48); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("xilinx_pll_clk_wiz.v", 356, 345); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll_clk_wiz.v", 324, 257); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 386, 70); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll_clk_wiz.v", 362, 368); // F:bH (JPanel:JComponent, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4); // z:k (G:JPanel, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// p:g (cv:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 323, 217); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 296, 287); // F:bH (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 240, 243); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 181, 357); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 175, 407); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 229, 296); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 102 seconds
+selectCodeEditor("xilinx_pll.v", 247, 332); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("xilinx_pll.v", 325, 281); // F:bH (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng_drive.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng_fpga_top.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 369, 186); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 401, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 406, 289); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 457, 72); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 118 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 391, 32); // F:bH (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 160 MB (+510kb) [00:54:58]
+// Elapsed time: 92 seconds
+selectCodeEditor("trng.xdc", 736, 175); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 150 seconds
+selectCodeEditor("trng.xdc", 420, 229); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 625, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 595, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 593, 289); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 489, 95); // F:bH (JPanel:JComponent, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 259, 145); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 319, 114); // F:bH (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Bitstream Generation Failed: addNotify
+// Elapsed time: 143 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ap:G (cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "21 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 32 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 72 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+// [GUI Memory]: 169 MB (+1385kb) [01:04:19]
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("trng.xdc", 355, 224); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("trng.xdc", 358, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 342, 311); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 325, 298); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("trng.xdc", 239, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 10, 284); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "trng.xdc", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 456, 294); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("trng.xdc", 443, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a:JButton (JPanel:JComponent, G:be)
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Thu Apr 27 16:55:27 2017] Launched impl_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/impl_1/runme.log 
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Bitstream Generation Failed: addNotify
+// Elapsed time: 189 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ap:G (cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 438, 110); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 331, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "21 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 25 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("trng.xdc", 381, 280); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 308, 320); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 361, 340); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 470, 322); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 470, 322); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 400, 307); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 21, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 393, 277); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("trng.xdc", 405, 268); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 172, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 395, 275); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "trng.xdc", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]", true); // ap:ao (R:ak, cv:JFrame)
+// Tcl Command: 'set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]'
+// Tcl Command: 'set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]'
+// Tcl Message: set_property SEVERITY {Warning} [get_drc_checks LUTLP-1] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aV:y (cv:JFrame): Save Project: addNotify
+// [GUI Memory]: 181 MB (+3248kb) [01:09:57]
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aV:y)
+// aN:y (cv:JFrame): Design Modified on Disk: addNotify
+dismissDialog("Save Project"); // aV:y (cv:JFrame)
+selectButton(PAResourceQtoS.SaveProjectUtils_RELOAD, "Reload"); // a:JButton (JPanel:JComponent, aN:y)
+// bL:g (cv:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 6,955 MB. GUI used memory: 115 MB. Current time: 4/27/17 5:00:17 PM CST
+// Engine heap size: 6,955 MB. GUI used memory: 116 MB. Current time: 4/27/17 5:00:17 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.dcp' for cell 'u_xilinx_pll' 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: MARK_DEBUG_NET
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_CORE_ADD
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 6,990 MB. GUI used memory: 79 MB. Current time: 4/27/17 5:00:22 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 7,137 MB (+31781kb) [01:10:09]
+// Schematic: addNotify
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 627 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Common 17-14] Message 'Constraints 18-550' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll_board.xdc] for cell 'u_xilinx_pll/inst' Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll_board.xdc] for cell 'u_xilinx_pll/inst' Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc] for cell 'u_xilinx_pll/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc:57] 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xdc] for cell 'u_xilinx_pll/inst' Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: INFO: [Common 17-14] Message 'Vivado 12-2285' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc:208] 
+// Tcl Message: Finished Parsing XDC File [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc] 
+// Tcl Message: INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.dcp' INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 8424.141 ; gain = 174.684 ; free physical = 24438 ; free virtual = 481308 
+// 'ck' command handler elapsed time: 14 seconds
+// N:a (cv:JFrame): Critical Messages: addNotify
+dismissDialog("Reloading"); // bL:g (cv:JFrame)
+dismissDialog("Design Modified on Disk"); // aN:y (cv:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, N:a)
+dismissDialog("Critical Messages"); // N:a (cv:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 341, 202); // dI:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 232, 275, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]"); // ap:ao (R:ak, cv:JFrame)
+// Tcl Command: 'set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]'
+// Tcl Command: 'set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]'
+// Tcl Message: set_property SEVERITY {Warning} [get_drc_checks LUTLP-1] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aV:y (cv:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aV:y)
+// bL:g (cv:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aV:y (cv:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints 
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bL:g (cv:JFrame)
+selectButton(RDIResource.BaseDialog_NO, "No"); // a:JButton (JPanel:JComponent, G:be)
+// 'ck' command handler elapsed time: 8 seconds
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Thu Apr 27 17:00:47 2017] Launched impl_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// TclEventType: RUN_FAILED
+// ap:G (cv:JFrame): Bitstream Generation Failed: addNotify
+// Elapsed time: 292 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ap:G (cv:JFrame)
+selectCodeEditor("trng.xdc", 317, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 317, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 437, 179); // F:bH (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "21 errors"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 167 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_pll_clk_wiz.v", 6); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_pll.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("trng.xdc", 312, 165); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 347, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 397, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectCodeEditor("trng.xdc", 436, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectCodeEditor("trng.xdc", 429, 259); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Thu Apr 27 17:09:03 2017] Launched synth_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/runme.log [Thu Apr 27 17:09:03 2017] Launched impl_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/impl_1/runme.log 
+// Elapsed time: 53 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,131 MB. GUI used memory: 112 MB. Current time: 4/27/17 5:09:57 PM CST
+// Engine heap size: 7,131 MB. GUI used memory: 113 MB. Current time: 4/27/17 5:09:57 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bL:g (cv:JFrame):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bL:g (cv:JFrame)
+selectCodeEditor("trng.xdc", 185, 173); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("trng.xdc", 379, 141); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 333, 311); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 337, 379); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 316, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 316, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 316, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cv:JFrame)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+selectCodeEditor("trng.xdc", 64, 304); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "trng.xdc", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 231, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("trng.xdc", 236, 253); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 36, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // G:be (cv:JFrame)
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Thu Apr 27 17:11:06 2017] Launched synth_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/synth_1/runme.log [Thu Apr 27 17:11:06 2017] Launched impl_1... Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.runs/impl_1/runme.log 
+// Elapsed time: 17 seconds
+selectCodeEditor("trng.xdc", 503, 356); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 139 seconds
+selectCodeEditor("trng.xdc", 400, 450); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 387, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 296, 92); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 59 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 251, 79); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 250, 107); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 200, 27); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 557, 420); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 467, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("trng.xdc", 380, 206); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 169, 88); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 204, 91); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 181, 36); // F:bH (JPanel:JComponent, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 183, 96); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 303 seconds
+selectCodeEditor("trng.xdc", 647, 135); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 121, 121); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("trng.xdc", 452, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "49 critical warnings"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-2285] Cannot set LOC property of instance 'dut/u_trng0/u_RO_ARRAY_REF/RO_DLY_0/AA[5].DLY/LUT6_inst_del', Instance dut/u_trng0/u_RO_ARRAY_REF/RO_DLY_0/AA[5].DLY/LUT6_inst_del can not be placed in C6LUT of site SLICE_X110Y208 because the bel is occupied by dut/u_trng0/u_RO_ARRAY_REF/RO_DLY_0/AA[3].DLY/LUT6_inst_del(port:). This could be caused by bel constraint conflict [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc:55]. ]", 5); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 39 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-2285] Cannot set LOC property of instance 'dut/u_trng0/u_RO_ARRAY_REF/RO_DLY_0/AA[5].DLY/LUT6_inst_del', Instance dut/u_trng0/u_RO_ARRAY_REF/RO_DLY_0/AA[5].DLY/LUT6_inst_del can not be placed in C6LUT of site SLICE_X110Y208 because the bel is occupied by dut/u_trng0/u_RO_ARRAY_REF/RO_DLY_0/AA[3].DLY/LUT6_inst_del(port:). This could be caused by bel constraint conflict [/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc:55]. ]", 5); // al:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 67 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Out-of-Context Module Runs ;  ;  ; ", 4, "Out-of-Context Module Runs", 0, true); // z:as (JViewport:JComponent, cv:JFrame) - Node
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization Report ; Thu Apr 27 17:13:11 CST 2017 ; 7403 ; ", 3, "Thu Apr 27 17:13:11 CST 2017", 1, false); // z:as (JViewport:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng_drive.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "trng_drive.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,046 MB. GUI used memory: 79 MB. Current time: 4/27/17 5:40:01 PM CST
+// Elapsed time: 1193 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v), inst - xilinx_pll_clk_wiz (xilinx_pll_clk_wiz.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci), xilinx_pll (xilinx_pll.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 10, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 10, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 337, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 362, 230); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 55 seconds
+selectCodeEditor("trng.xdc", 317, 204); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 320, 228); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 381 seconds
+selectCodeEditor("trng.xdc", 253, 215); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 89 seconds
+selectCodeEditor("trng.xdc", 244, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng.xdc", 546, 266); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 120 seconds
+selectCodeEditor("trng.xdc", 375, 185); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 3, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("trng_fpga_top.v", 352, 168); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_xilinx_pll - xilinx_pll (xilinx_pll.xci)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, trng_fpga_top (trng_fpga_top.v), u_trng_drive - trng_drive (trng_drive.v)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 10, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, trng.xdc]", 10, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("trng.xdc", 321, 211); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, trng_fpga_define.v]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, trng_fpga_define.v]", 3, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, trng_fpga_define.v]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("trng_fpga_define.v", 356, 136); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_define.v", 356, 136); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_define.v", 358, 181); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("trng_fpga_define.v", 299, 254); // bH:N (JPanel:JComponent, cv:JFrame)

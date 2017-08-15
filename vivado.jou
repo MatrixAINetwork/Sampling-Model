@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Apr 27 17:56:21 2017
+# Process ID: 85004
+# Current directory: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709
+# Command line: vivado
+# Log file: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/vivado.log
+# Journal file: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/trng/trng.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run xilinx_pll_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 

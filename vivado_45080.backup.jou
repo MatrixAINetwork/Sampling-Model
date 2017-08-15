@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Apr 27 15:50:04 2017
+# Process ID: 45080
+# Current directory: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709
+# Command line: vivado
+# Log file: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/vivado.log
+# Journal file: /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project trng /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng -part xc7vx690tffg1761-2
+set_property board_part xilinx.com:vc709:part0:1.8 [current_project]
+add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v
+add_files -fileset constrs_1 -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/xdc/trng.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+remove_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+remove_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top trng_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+write_edif -force /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf
+remove_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/fpga_filelist.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.edf
+add_files -norecurse {/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng_top.v /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_drive.v /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_top.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name xilinx_pll
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} CONFIG.PRIM_IN_FREQ {200.000} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKIN1_JITTER_PS {50.0} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {9.125} CONFIG.MMCM_CLKIN1_PERIOD {5.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {36.500} CONFIG.CLKOUT1_JITTER {178.502} CONFIG.CLKOUT1_PHASE_ERROR {104.359}] [get_ips xilinx_pll]
+generate_target {instantiation_template} [get_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci]
+export_ip_user_files -of_objects [get_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci]
+launch_run -jobs 16 xilinx_pll_synth_1
+export_simulation -of_objects [get_files /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.srcs/sources_1/ip/xilinx_pll/xilinx_pll.xci] -directory /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.ip_user_files/sim_scripts -ip_user_files_dir /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.ip_user_files -ipstatic_source_dir /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng/trng.ip_user_files/ipstatic -force -quiet
+refresh_design
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+add_files -norecurse /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v
+update_compile_order -fileset sources_1
+set_property file_type {Verilog Header} [get_files  /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v]
+set_property is_global_include true [get_files  /proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/hack/trng_fpga_define.v]
+update_compile_order -fileset sources_1
+refresh_design
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_xilinx_pll/inst/clk_out1 ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rdata[0]} {rdata[1]} {rdata[2]} {rdata[3]} {rdata[4]} {rdata[5]} {rdata[6]} {rdata[7]} {rdata[8]} {rdata[9]} {rdata[10]} {rdata[11]} {rdata[12]} {rdata[13]} {rdata[14]} {rdata[15]} {rdata[16]} {rdata[17]} {rdata[18]} {rdata[19]} {rdata[20]} {rdata[21]} {rdata[22]} {rdata[23]} {rdata[24]} {rdata[25]} {rdata[26]} {rdata[27]} {rdata[28]} {rdata[29]} {rdata[30]} {rdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {addr[0]} {addr[1]} {addr[2]} {addr[3]} {addr[4]} {addr[5]} {addr[6]} {addr[7]} {addr[8]} {addr[9]} {addr[10]} {addr[11]} {addr[12]} {addr[13]} {addr[14]} {addr[15]} {addr[16]} {addr[17]} {addr[18]} {addr[19]} {addr[20]} {addr[21]} {addr[22]} {addr[23]} {addr[24]} {addr[25]} {addr[26]} {addr[27]} {addr[28]} {addr[29]} {addr[30]} {addr[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {wdata[0]} {wdata[1]} {wdata[2]} {wdata[3]} {wdata[4]} {wdata[5]} {wdata[6]} {wdata[7]} {wdata[8]} {wdata[9]} {wdata[10]} {wdata[11]} {wdata[12]} {wdata[13]} {wdata[14]} {wdata[15]} {wdata[16]} {wdata[17]} {wdata[18]} {wdata[19]} {wdata[20]} {wdata[21]} {wdata[22]} {wdata[23]} {wdata[24]} {wdata[25]} {wdata[26]} {wdata[27]} {wdata[28]} {wdata[29]} {wdata[30]} {wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list resetn ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list scan_mode ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list sel ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list write ]]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]
+refresh_design
+set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]
+save_constraints
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

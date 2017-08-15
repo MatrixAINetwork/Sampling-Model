@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Apr 27 17:56:21 2017
+# Process ID: 85004
+# Current directory: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709
+# Command line: vivado
+# Log file: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/vivado.log
+# Journal file: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/trng/trng.xpr
+INFO: [Project 1-313] Project file moved from '/proj/rcpfpga/wa/wangyf/trng_ip/trng_vc709/fpga/vc709/trng' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/tools/xilinx/vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run xilinx_pll_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Apr 27 17:59:52 2017] Launched xilinx_pll_synth_1, synth_1...
+Run output will be captured here:
+xilinx_pll_synth_1: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/trng/trng.runs/xilinx_pll_synth_1/runme.log
+synth_1: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/trng/trng.runs/synth_1/runme.log
+[Thu Apr 27 17:59:52 2017] Launched impl_1...
+Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/trng/trng.runs/impl_1/runme.log
+reset_run impl_1 -noclean_dir 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Apr 27 18:08:09 2017] Launched impl_1...
+Run output will be captured here: /proj/rcpfpga/wa/wangyf/trng_ip/fpga_proj_release/vc709/trng/trng.runs/impl_1/runme.log
+reset_run impl_1 -noclean_dir 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 18:09:03 2017...
